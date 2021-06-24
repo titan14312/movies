@@ -716,7 +716,7 @@ class SearchMovieComponent {
             this.created = false;
             this.searchBoxLayout = "space-between center";
         }
-        this.url = "http://www.omdbapi.com/?";
+        this.url = "https://www.omdbapi.com/?";
         //Combine various parameters to form url
         this.url = this.url.concat(`s=${this.title}`, `&type=${this.selectedType}`, `&page=${this.page}`, `&y=${this.year}`, "&apikey=f2de4f33");
         fetch(this.url)
